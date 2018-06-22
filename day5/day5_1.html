@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/day5_2.css" id="link"/>
+		<style type="text/css">
+			input {
+				position: fixed;
+				left: 50%;
+				top: 30px;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="切换" onclick="change()"/>
+		<div class="left">
+			<h1>简历</h1>
+		</div>
+		<div class="right">
+			<div>
+				<h2>基本信息</h2>
+				<div>
+					<p><span>姓名 &nbsp;</span>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>性别 &nbsp;</span>男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>应聘职位 &nbsp;</span>Web前端工程师</p>
+				</div>
+				
+			</div>
+			<div>
+				<h2>联系方式</h2>
+				<div>
+					<p><span>手机 &nbsp;</span> 13333333333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Email &nbsp;</span><a href="">diaoshu00a@gmail.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 个人主页 &nbsp;</span><a href="">Github</a></p>
+				</div>
+				
+			</div>
+			<div>
+				<h2>能力描述</h2>
+				<div>
+					<p><span>技术能力</span>熟练掌握HTML,CSS,JavaScript</p>
+					<p><span>综合能力</span>良好的沟通，主动积极，努力勤奋</p>
+				</div>
+			</div>
+			<div>
+				
+					<h2>教育经历</h2>
+				<div>
+					<p><span>本科</span>百度前端学院小薇学院</p>
+					<p><span>研究生</span>百度前端学院大斌学院</p>
+				</div>
+				
+			</div>
+			<div>
+				<h2>项目经历</h2>
+				<div>
+					<p><span>小度小度</span>作为前端工程师角色参与了ABC组件的开发</p>
+					<p><span>SAN Doc</span>作为文档工程师参与了SAN Doc编写</p>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var a = 1;
+		function change(){
+			var link =  document.getElementById("link");
+			if(a == 1){
+				link.href = "css/day5_2.css";
+				a = 0;
+			}else {
+				link.href = "css/day5_1.css";
+				a = 1 ;
+			}
+			
+		}
+		
+	</script>
+</html>
