@@ -3,7 +3,79 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/day4.css"/>
+		<style type="text/css">
+			/*通用*/
+body {
+	position: relative;
+}
+body:before {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(http://wx4.sinaimg.cn/mw690/d49326d1gy1fsiyglsvx8j20sg10talb.jpg);
+    background-size: 300px;
+    opacity: 0.2;
+}
+*{margin: 0;padding: 0;}
+.m3{margin-top: 3px;margin-bottom: 3px;}
+body,html{height: 100%;font-size: 10px;}
+h1,h2,h4,h5,h6,p,span{font-weight: 200;}
+h3{font-weight: 400;font-size: 1.8em;}
+ul,
+li{list-style: none;}
+p{font-size: 1.4em;line-height: 24px;}
+i{margin-right: 10px;}
+.circle{width: 9px;height: 9px;border-radius: 50%;background: black;}
+.line{width: 1px;height: 61px;margin: 0 auto;background: black;}
+
+/*容器*/
+.container{box-sizing: border-box;width: 1200px;height: 100%;margin: 0 auto;padding: 50px 0;}
+.container > div{position: relative;float: left;box-sizing: border-box;width: 300px;height: 100%;padding: 0 42px;}
+.container > div:nth-child(-n+3){border-right: 1px solid #d2d2d2;}
+
+/*一栏table*/
+.mediate1{display: table-cell;text-align: center;vertical-align: middle;}
+.mediate1 h2{margin-bottom: 20px;}
+.mediate1 img{width: 120px;margin-bottom: 20px;border: 1px solid #999;}
+
+/*第二栏*/
+.second h3{margin-bottom: 25px;}
+.second h3:first-child{margin-top: 30px;text-align: center;}
+.second h3:last-of-type{margin-top: 70px;text-align: left;}
+
+/*第三栏*/
+.third{position: relative;}
+.third ul{margin-left: 18px;}
+.third li{margin-bottom: 16px;}
+.third li span:nth-of-type(1){font-size: 8px;color: #7f7f7f;}
+.third p{font-weight: 400;}
+.third h3{line-height: 40px;}
+.third h3:first-child{margin-top: 10px;}
+.third span{font-size: 1.2em;line-height: 18px;display: block;margin-left: 16px;}
+
+/*第四栏*/
+.fourth h3:nth-of-type(2){margin-top: 36px;}
+.fourth h3:first-child{margin-top: 20px;}
+.fourth ul{overflow: hidden;}
+.fourth li{line-height: 38px;float: left;width: 80px;margin-top: 30px;margin-left: 28px;text-align: center;}
+.fourth li div{transition: all .5s;border: 1px solid black;
+	box-sizing:border-box;font-weight: bolder;width: 40px;height: 40px;margin: 0 auto 6px;color: white;border-radius: 50%;background: black;}
+.fourth li div:hover {
+	border: 1px solid #999;
+	background: white;
+	color: black;
+	box-sizing:border-box;
+}
+/*定位*/
+.adorn{position: absolute;top: 54px;left: 31px;}
+.adorn1{position: absolute;top: 321px;left: 31px;}
+		</style>
 		<title></title>
 	</head>
 	<body>
